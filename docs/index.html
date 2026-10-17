@@ -40,7 +40,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="https://cybercore-tech.github.io/" data-brand-phase="0" aria-label="Cybercore Tech home"><span class="brand-emblem">CC</span><span class="brand-name">CYBERCORE <b>/</b> CYBERWATCH<small>OMARCHY INTEGRATIONS</small></span></a>
+    <a class="brand" href="https://cybercoretech.github.io/" data-brand-phase="0" aria-label="Cybercore Tech home"><span class="brand-emblem">CC</span><span class="brand-name">CYBERCORE <b>/</b> CYBERWATCH<small>OMARCHY INTEGRATIONS</small></span></a>
     <nav class="main-nav" aria-label="Primary"><a href="#discover">DISCOVERY</a><a href="#attention">ATTENTION</a><a href="#setup">SETUP</a><a href="#themes">THEMES</a></nav>
     <div class="theme-picker"><span class="theme-label">THEME</span><button id="themeButton" class="theme-button" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="themeMenu">LOADING THEMES…</button><div id="themeMenu" class="theme-menu" role="listbox" aria-label="Theme" hidden></div></div>
   </header>
@@ -53,7 +53,7 @@
         <p class="tagline">Your own services, one glance away. Broken ones float straight to the top.</p>
         <p class="lede">An Omarchy bar widget counts the units that need you; click it for a TUI that starts, stops, restarts and edits them and tails their logs. It finds your services on its own — no list to maintain — and understands timers well enough not to cry wolf.</p>
         <div class="chips"><span class="chip"><b>◆</b> AUTO-DISCOVERY</span><span class="chip"><b>◆</b> TIMER-AWARE</span><span class="chip"><b>◆</b> SUDOEDIT</span><span class="chip"><b>◆</b> MIT</span></div>
-        <div class="cta"><a class="btn" href="https://github.com/cybercore-tech/cyberwatch">VIEW SOURCE ↗</a><a class="btn ghost" href="#setup">INSTALL</a></div>
+        <div class="cta"><a class="btn" href="https://github.com/cybercoretech/cyberwatch">VIEW SOURCE ↗</a><a class="btn ghost" href="#setup">INSTALL</a></div>
       </div>
       <div class="wall reveal" aria-hidden="true">
         <div class="wall-head"><span>cyberwatch — 11 units</span><b id="attn">0 need attention</b></div>
@@ -105,7 +105,7 @@
       <div class="section-head reveal"><div><p class="eyebrow">04 / Setup</p><h2>Post<br><em>the watch.</em></h2></div><p>It ships as an Omarchy plugin with a bundled binary. Without one for your architecture, the launcher builds this same checkout with <code>cargo build --locked</code> — it never fetches and executes a remote artifact.</p></div>
       <div class="grid g2">
         <div class="reveal"><span class="label">BUILD THE BUNDLED BINARY</span>
-<pre class="code" data-copy><code>git clone https://github.com/cybercore-tech/cyberwatch
+<pre class="code" data-copy><code>git clone https://github.com/cybercoretech/cyberwatch
 cd cyberwatch && ./install.sh    <span class="c"># builds + places bin/&lt;arch&gt;/cyberwatch</span>
 
 cyberwatch               <span class="c"># TUI</span>
@@ -126,7 +126,7 @@ cyberwatch --list        <span class="c"># every watched unit as JSON</span></co
     </section>
 
     <section class="wrap section" style="padding-top:0">
-      <div class="card c-pink related reveal"><div><span class="num">◆ SISTER WIDGET</span><h3>CYBERFLEET — YOUR REPOS</h3><p>The same idea for git: a bar count of repos needing attention, and a TUI to fetch, diff and jump in.</p></div><a class="btn" href="https://cybercore-tech.github.io/cyberfleet/">CYBERFLEET ↗</a></div>
+      <div class="card c-pink related reveal"><div><span class="num">◆ SISTER WIDGET</span><h3>CYBERFLEET — YOUR REPOS</h3><p>The same idea for git: a bar count of repos needing attention, and a TUI to fetch, diff and jump in.</p></div><a class="btn" href="https://cybercoretech.github.io/cyberfleet/">CYBERFLEET ↗</a></div>
     </section>
   </main>
 
@@ -134,12 +134,12 @@ cyberwatch --list        <span class="c"># every watched unit as JSON</span></co
     <div class="wrap"><cybercore-contact repo="cyberwatch"><a href="mailto:dev@cybercoretech.net">dev@cybercoretech.net</a></cybercore-contact></div>
   </section>
 
-  <footer><span>CYBERCORE TECH / CYBERWATCH / MIT / © <span id="year"></span></span><span><a href="https://cybercore-tech.github.io/">CYBERCORE-TECH.GITHUB.IO</a> · <a href="https://github.com/cybercore-tech/cyberwatch">SOURCE</a></span></footer>
+  <footer><span>CYBERCORE TECH / CYBERWATCH / MIT / © <span id="year"></span></span><span><a href="https://cybercoretech.github.io/">CYBERCORE-TECH.GITHUB.IO</a> · <a href="https://github.com/cybercoretech/cyberwatch">SOURCE</a></span></footer>
   <script>
     (() => { const a = document.getElementById('attn'); if (!a || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       let t = 0; setInterval(() => { t = (t + 1) % 9; a.textContent = t < 5 ? '1 needs attention' : '0 need attention'; a.style.color = t < 5 ? 'var(--a3)' : 'var(--a1)'; }, 1000); })();
   </script>
   <script src="app.js"></script>
-  <script type="module" src="https://cybercore-tech.github.io/kit/contact.js"></script>
+  <script type="module" src="https://cybercoretech.github.io/kit/contact.js"></script>
 </body>
 </html>
