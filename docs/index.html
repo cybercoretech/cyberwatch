@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#09080f">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='8' y='8' width='38' height='38' fill='%2339ff33'/%3E%3Crect x='54' y='8' width='38' height='38' fill='%2339ff33'/%3E%3Crect x='8' y='54' width='38' height='38' fill='%23f1142d'/%3E%3Crect x='54' y='54' width='38' height='38' fill='%2339ff33'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cybercoretech.github.io/kit/v1/effects.css">
   <style>
     :root { --a1: var(--acid); --a2: var(--cyan); --a3: var(--red); }
     .wall { position: relative; width: min(100%, 32rem); margin-inline: auto; padding: 1.1rem; border: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 85%, transparent); }
@@ -139,7 +140,7 @@ cyberwatch --list        <span class="c"># every watched unit as JSON</span></co
     (() => { const a = document.getElementById('attn'); if (!a || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       let t = 0; setInterval(() => { t = (t + 1) % 9; a.textContent = t < 5 ? '1 needs attention' : '0 need attention'; a.style.color = t < 5 ? 'var(--a3)' : 'var(--a1)'; }, 1000); })();
   </script>
-  <script src="app.js"></script>
+  <script src="https://cybercoretech.github.io/kit/v1/cybercore.js"></script>
   <script type="module" src="https://cybercoretech.github.io/kit/contact.js"></script>
 </body>
 </html>
